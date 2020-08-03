@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Пост о {{ post.title }}</title>
+{% endblock %}
+
+{% block body %}
+<body class="text-center ">
+  <div class="container-sm ">
+    <h1 class="display-4">{{ post.title }}</h1>
+    <p class="lead">{{ post.price }} ₽</p>
+
+
+        <div class="row">
+          <div class="col">
+<!--            1 of 3-->
+          </div>
+          <div class="col-6">
+            <p class="lead">{{ post.text }}</p>
+            <a href="/buy/{{ post.id }}" class="btn btn-lg btn-block btn-outline-primary">Купить товар</a>
+          </div>
+          <div class="col">
+<!--            3 of 3-->
+          </div>
+        </div>
+
+  </div>
+{% endblock %}
+
+
+
+
+
+
+
+
+</body>
+
+
